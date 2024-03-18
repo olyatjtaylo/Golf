@@ -30,3 +30,7 @@ jobs:
         CHATGPT_API_KEY: ${{ secrets.CHATGPT_API_KEY }} # This should be set in your GitHub repository's secrets
       run: |
         python send_code_for_review.py
+    - name: Send Code to ChatGPT for Review
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        CHATGPT_API_KEY: ${{ secrets.CHATGPT_API_KEY }}  # Set this in your  
